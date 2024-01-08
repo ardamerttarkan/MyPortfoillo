@@ -4,6 +4,11 @@ const email = document.querySelector('#Email');
 const message = document.querySelector('#message');
 const subject = document.querySelector('#subject');
 
+
+function HomePage(){
+    window.location.href ="../Homepage/index.html" ;
+}
+
 function sendEmail(){
 
     const bodyMessage = `İsim: ${name.value} <br> Email: ${email.value} <br>  Telefon: ${phone.value} <br> Konu: ${subject.value} <br>   Mesaj: ${message.value}`;

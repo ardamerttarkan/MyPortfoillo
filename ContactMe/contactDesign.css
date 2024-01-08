@@ -5,6 +5,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 body{
     display: flex;
     justify-content: center;
@@ -12,6 +14,49 @@ body{
     min-height: 100vh;
     background: #1f242d;
 }
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+
+.logo{
+    font-size:36px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.menu a{
+    font-size: 22px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .3s;
+    
+    
+
+
+}
+
+.menu a:hover,
+.menu a.active{
+    color: #00abf0;
+}
+
+
 
 .contact h2{
     font-size: 40px;

@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfoillo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../changepageanim.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="#" class="logo">logo.</a>
+            <a href="#" class="logo" onclick="HomePage()">logo.</a>
         </div>
 
         <div class="menu">
-        <a href="#" class="active">Ana Sayfa</a>
+        <a href="#" class="active" onclick="HomePage()">Ana Sayfa</a>
         <a href="#">Ben Kimim</a>
         <a href="#">Hobiler</a>
         <a href="#">Projeler</a>
@@ -47,6 +49,10 @@
  <script>
     function ContactMe(){
         window.location.href ="../ContactMe/contactme.html" ;
+    }
+
+        function HomePage(){
+        window.location.href ="../Homepage/index.html" ;
     }
  </script>
  
