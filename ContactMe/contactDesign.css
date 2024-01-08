@@ -43,7 +43,7 @@ form .input-box{
     width: 100%;
     padding: 18px;
     background: transparent;
-    border: 1px solid #0ef;
+    border: 2px solid #0ef;
     outline: none;
     border-radius: 6px;
     font-size: 16px;
@@ -82,7 +82,7 @@ form button{
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: .5s;
 }
 form button:hover{
