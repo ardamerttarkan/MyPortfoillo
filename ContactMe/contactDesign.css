@@ -33,6 +33,7 @@ form .input-box{
 }
 
 .input-box .input-field{
+    padding-bottom: 10px;
     width: 48%;
 }
 

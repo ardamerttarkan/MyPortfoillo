@@ -11,6 +11,7 @@ function sendEmail(){
 
 
     Email.send({
+        //https://smtpjs.com/
         SecureToken: "42efbe46-83f4-45c5-a93d-5a423015def6",
         To : 'ardamert607734@gmail.com',
         From : "ardamert607734@gmail.com",
