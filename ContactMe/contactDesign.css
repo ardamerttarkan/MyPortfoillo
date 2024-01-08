@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
+
+.contact h2{
+    font-size: 40px;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form{
+
+    width: 600px;
+    text-align: center;
+
+}
+form .input-box{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 48%;
+}
+
+
+
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 1px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 12px 0;
+
+}
+.field .item::placeholder{
+    color: rgba(255, 255, 255, .3);
+}
+
+.field .error-txt{
+    font-size: 14px;
+    color: red;
+    text-align: left;
+    margin: 8px 0 20px;
+    display: none;
+}
+
+
+form .textarea-field .item{
+    resize: none;
+}
+
+
+
+form button{
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
+
+}
