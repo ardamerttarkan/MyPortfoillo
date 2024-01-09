@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+
+.logo{
+    font-size:36px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.menu a{
+    font-size: 22px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .3s;
+    
+    
+
+
+}
+
+.menu a:hover,
+.menu a.active{
+    color: #00abf0;
+}
+
+
+.container{
+    width: 450px;
+    background: pink;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing:  0 0 5px rgba(0,0,0,0.5);
+
+}
+.container h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.container p{
+    line-height: 1.4;
+    text-align: justify;
+
+}
+#check{
+    display: none;
+}
+.content{
+    display: none;
+    transition: 0.5s linear;
+}
+label{
+    display: inline-block;
+    margin-top: 15px;
+    color: darkblue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+#check:checked ~ .content{
+    display: block;
+}
+#check:checked ~ label{
+    visibility: hidden;
+}
+
+#check:checked ~ label:after{
+    content: 'Daha Az Göster';
+    display: block;
+    visibility: visible;
+}
+
+
+
+
