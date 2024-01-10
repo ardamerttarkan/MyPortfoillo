@@ -50,13 +50,20 @@ body{
 
 }
 
-.menu a:hover,
+.menu a:hovabout-meer,
 .menu a.active{
     color: #00abf0;
 }
 
-
 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container .about-me{
     width: 450px;
     background: #1f242d;
     padding: 20px;
@@ -65,20 +72,80 @@ body{
     border: 2px solid #0ef;
 
 }
-.container h2{
+.container .about-me h2{
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white;
 
 }
-.container p{
+.container .about-me p{
     line-height: 1.4;
     text-align: justify;
     color: white;
 
 }
-#check{
+
+.container .education{
+    width: 450px;
+    background: #1f242d;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing:  0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid #0ef;
+
+}
+.container .education h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+
+}
+.container .education p{
+    line-height: 1.4;
+    text-align: justify;
+    color: white;
+
+}
+
+.container .hobbies{
+    width: 450px;
+    background: #1f242d;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing:  0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid #0ef;
+
+}
+.container .hobbies h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+
+}
+.container .hobbies p{
+    line-height: 1.4;
+    text-align: justify;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#check, #check1, #check2{
     display: none;
 }
 .content{
@@ -93,14 +160,22 @@ label{
     cursor: pointer;
     font-weight: 600;
 }
-#check:checked ~ .content{
+#check:checked ~ .content,
+#check1:checked ~ .content,
+#check2:checked ~ .content
+{
     display: block;
 }
-#check:checked ~ label{
+#check:checked ~ label,
+#check1:checked ~ label,
+#check2:checked ~ label
+{
     visibility: hidden;
 }
 
-#check:checked ~ label:after{
+#check:checked ~ label:after,
+#check1:checked ~ label:after,
+#check2:checked ~ label:after{
     content: 'Daha Az Göster';
     display: block;
     visibility: visible;
