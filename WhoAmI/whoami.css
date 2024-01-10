@@ -58,21 +58,24 @@ body{
 
 .container{
     width: 450px;
-    background: pink;
+    background: #1f242d;
     padding: 20px;
     margin: 0 auto;
     box-sizing:  0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid #0ef;
 
 }
 .container h2{
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: white;
 
 }
 .container p{
     line-height: 1.4;
     text-align: justify;
+    color: white;
 
 }
 #check{
@@ -85,7 +88,7 @@ body{
 label{
     display: inline-block;
     margin-top: 15px;
-    color: darkblue;
+    color: #00abf0;
     text-decoration: underline;
     cursor: pointer;
     font-weight: 600;
