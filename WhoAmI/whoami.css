@@ -55,14 +55,22 @@ body{
     color: #00abf0;
 }
 
+
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
+    padding: 200px;
 }
 
+.swiper {
+    width: 70%;
+    height:auto;
+
+  }
 .container .about-me{
     width: 450px;
     background: #1f242d;
@@ -131,6 +139,28 @@ body{
     color: white;
 
 }
+.container .carrier{
+    width: 450px;
+    background: #1f242d;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing:  0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid #0ef;
+
+}
+.container .carrier h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+
+}
+.container .carrier p{
+    line-height: 1.4;
+    text-align: justify;
+    color: white;
+
+}
 
 
 
@@ -145,7 +175,7 @@ body{
 
 
 
-#check, #check1, #check2{
+#check, #check1, #check2, #check3{
     display: none;
 }
 .content{
@@ -162,20 +192,23 @@ label{
 }
 #check:checked ~ .content,
 #check1:checked ~ .content,
-#check2:checked ~ .content
+#check2:checked ~ .content,
+#check3:checked ~ .content
 {
     display: block;
 }
 #check:checked ~ label,
 #check1:checked ~ label,
-#check2:checked ~ label
+#check2:checked ~ label,
+#check3:checked ~ label
 {
     visibility: hidden;
 }
 
 #check:checked ~ label:after,
 #check1:checked ~ label:after,
-#check2:checked ~ label:after{
+#check2:checked ~ label:after,
+#check3:checked ~ label:after{
     content: 'Daha Az Göster';
     display: block;
     visibility: visible;

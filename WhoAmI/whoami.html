@@ -6,6 +6,7 @@
     <title>Ben Kimim</title>
     <link rel="stylesheet" href="../WhoAmI/whoami.css">
     <link rel="stylesheet" href="../changepageanim.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="navbar">
@@ -21,9 +22,11 @@
         <a href="#" onclick="ContactMe()">İletişim</a>
     </div>
         </div>
-        <div class="container">
+        <div class="swiper mySwiper container">
 
-            <div class="about-me">
+            <div class="swiper-wrapper cards">
+
+            <div class="swiper-slide about-me">
             <input type="checkbox" id="check">
             <h2> HAKKIMDA</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit alias illo corporis dolorem odio, blanditiis doloremque necessitatibus quas natus ipsa nam consectetur eaque assumenda sapiente consequuntur minus, quasi reiciendis?  </p>
@@ -34,7 +37,7 @@
         
         </div>
 
-        <div class="education">
+        <div class="swiper-slide education">
             <input type="checkbox" id="check1">
             <h2> EĞİTİM</h2>
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, voluptas harum, maiores eius accusantium adipisci porro at ipsa dolor minima consequuntur similique distinctio, veritatis necessitatibus praesentium delectus! Consequuntur, quaerat molestias!  </p>
@@ -46,7 +49,7 @@
         </div>
 
 
-        <div class="hobbies">
+        <div class="swiper-slide hobbies">
             <input type="checkbox" id="check2">
             <h2> İLGİ ALANLARI</h2>
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, voluptas harum, maiores eius accusantium adipisci porro at ipsa dolor minima consequuntur similique distinctio, veritatis necessitatibus praesentium delectus! Consequuntur, quaerat molestias!  </p>
@@ -57,14 +60,30 @@
         
         </div>
 
-   
-   
-   
+        <div class="swiper-slide carrier">
+            <input type="checkbox" id="check3">
+            <h2> KARİYER</h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, voluptas harum, maiores eius accusantium adipisci porro at ipsa dolor minima consequuntur similique distinctio, veritatis necessitatibus praesentium delectus! Consequuntur, quaerat molestias!  </p>
+       <div class="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque itaque porro saepe, inventore laboriosam officia, at quidem perspiciatis aliquid error, sint consequatur cupiditate culpa odit qui mollitia earum non? Velit!</p>
+       </div>
+           <label for="check3">Daha Fazla Göster...</label>
+        
+        </div>
+
     </div>
 
+   
+   
     
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
 
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="../WhoAmI/scriptinfo.js"></script>
 
 </body>
 
