@@ -162,9 +162,32 @@ body{
 
 }
 
+.container .odin{
+    width: 450px;
+    background: #1f242d;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing:  0 0 5px rgba(0,0,0,0.5);
+    border: 2px solid #0ef;
+
+}
+.container .odin h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+
+}
+.container .odin p{
+    line-height: 1.4;
+    text-align: justify;
+    color: white;
+
+}
 
 
-#check, #check1, #check2, #check3{
+
+#check, #check1, #check2, #check3, #check4{
     display: none;
 }
 .content{
@@ -182,14 +205,16 @@ label{
 #check:checked ~ .content,
 #check1:checked ~ .content,
 #check2:checked ~ .content,
-#check3:checked ~ .content
+#check3:checked ~ .content,
+#check4:checked ~ .content
 {
     display: block;
 }
 #check:checked ~ label,
 #check1:checked ~ label,
 #check2:checked ~ label,
-#check3:checked ~ label
+#check3:checked ~ label,
+#check4:checked ~ label
 {
     visibility: hidden;
 }
@@ -197,7 +222,8 @@ label{
 #check:checked ~ label:after,
 #check1:checked ~ label:after,
 #check2:checked ~ label:after,
-#check3:checked ~ label:after{
+#check3:checked ~ label:after,
+#check4:checked ~ label:after{
     content: 'Daha Az Göster';
     display: block;
     visibility: visible;
