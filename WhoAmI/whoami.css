@@ -71,6 +71,14 @@ body{
     height:auto;
 
   }
+
+  .swiper-slide.hobbies a,
+  .swiper-slide.odin a{
+    color: #ff9900; 
+    text-decoration: none; 
+}
+
+
 .container .about-me{
     width: 450px;
     background: #1f242d;

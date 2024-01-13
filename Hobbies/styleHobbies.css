@@ -29,6 +29,12 @@ body{
 
 }
 
+#popupmuzik a {
+    color: #ff9900; 
+    text-decoration: none; 
+    
+}
+
 .logo{
     font-size:36px;
     color: white;
@@ -180,6 +186,7 @@ font-weight: 400;
     visibility: hidden;
     opacity: 0;
     transition: .5s;
+    overflow-y: auto;
 
 }
 #popup.active,
@@ -193,7 +200,7 @@ font-weight: 400;
 #popupfilm h2,
 #popupmuzik h2{
     color: white;
-    text-align: center;
+    text-align: left;
     margin:10px;
 }
 #popup p,
