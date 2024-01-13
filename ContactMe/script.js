@@ -5,15 +5,25 @@ const message = document.querySelector('#message');
 const subject = document.querySelector('#subject');
 
 
-function HomePage(){
+function ContactMe(){
+    window.location.href ="../ContactMe/contactme.html" ;
+}
+
+    function HomePage(){
     window.location.href ="../Homepage/index.html" ;
 }
+
 function WhoAmI(){
     window.location.href ="../WhoAmI/whoami.html" ;
 }
+function Hobbies(){
+    window.location.href ="../Hobbies/hobbies.html"
+}
+
+
 function sendEmail(){
 
-    const bodyMessage = `İsim: ${name.value} <br> Email: ${email.value} <br>  Telefon: ${phone.value} <br> Konu: ${subject.value} <br>   Mesaj: ${message.value}`;
+    const bodyMessage = `İsim: ${name.value} <br> Email: ${email.value} <br> Konu: ${subject.value} <br>   Mesaj: ${message.value}`;
 
 
 

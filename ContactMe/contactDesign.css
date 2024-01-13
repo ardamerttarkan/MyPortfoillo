@@ -6,7 +6,7 @@
 }
 
 
-
+ 
 body{
     display: flex;
     justify-content: center;
@@ -80,6 +80,11 @@ form .input-box{
 .input-box .input-field{
     padding-bottom: 10px;
     width: 48%;
+}
+
+.input-box .input-subject{
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 
