@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
     <link rel="stylesheet" href="../Hobbies/styleHobbies.css">
+    <link rel="stylesheet" href="../changepageanim.css">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
         <div class="menu">
         <a href="#" class="active" onclick="HomePage()">Ana Sayfa</a>
         <a href="#" onclick="WhoAmI()">Ben Kimim</a>
-        <a href="#">Hobiler</a>
+        <a href="#" onclick="Hobbies()">Hobiler</a>
         <a href="#">Projeler</a>
         <a href="#" onclick="ContactMe()">İletişim</a>
     </div>
@@ -30,8 +31,14 @@
             <h1 class="card-title">OYUN</h1>
             <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi doloribus impedit obcaecati, necessitatibus esse magnam, dolore excepturi placeat eum eveniet officiis, qui aut nam facilis sunt. Itaque accusamus neque ab?
             </p>
-            <button class="card-btn" onclick="GamesPage() ">Daha Fazla</button>
+            <button class="card-btn"  onclick="showPopup()">Daha Fazla</button>
         </div>
+    </div>
+
+    <div id="popup">
+        <h2>OYUNLAR</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error officiis ipsam id aliquam itaque at voluptatibus officia praesentium quisquam natus dolore non impedit dolorem modi exercitationem et ipsum, repellendus maiores.</p>
+        <button class="card-btnPopup" onclick="hidePopup()" >Kapat</button>
     </div>
 
     <div class="card-film">
@@ -41,8 +48,15 @@
             <h1 class="card-title">FILM</h1>
             <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi doloribus impedit obcaecati, necessitatibus esse magnam, dolore excepturi placeat eum eveniet officiis, qui aut nam facilis sunt. Itaque accusamus neque ab?
             </p>
-            <button class="card-btn">Daha Fazla</button>
+            <button class="card-btn" onclick="showPopupFilm()">Daha Fazla</button>
         </div>
+        <div id="popupfilm">
+            <h2>FILMLER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error officiis ipsam id aliquam itaque at voluptatibus officia praesentium quisquam natus dolore non impedit dolorem modi exercitationem et ipsum, repellendus maiores.</p>
+            <button class="card-btnPopup" onclick="hidePopupFilm()" >Kapat</button>
+        </div>
+
+        
     </div>
 
     <div class="card-muzik">
@@ -52,13 +66,67 @@
             <h1 class="card-title">MÜZİK</h1>
             <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi doloribus impedit obcaecati, necessitatibus esse magnam, dolore excepturi placeat eum eveniet officiis, qui aut nam facilis sunt. Itaque accusamus neque ab?
             </p>
-            <button class="card-btn">Daha Fazla</button>
+            <button class="card-btn" onclick="showPopupMuzik()">Daha Fazla</button>
+        </div>
+
+        <div id="popupmuzik">
+            <h2>MÜZİK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error officiis ipsam id aliquam itaque at voluptatibus officia praesentium quisquam natus dolore non impedit dolorem modi exercitationem et ipsum, repellendus maiores.</p>
+            <button class="card-btnPopup" onclick="hidePopupMuzik()" >Kapat</button>
         </div>
     </div>
     
 
     
-  <script>function ContactMe(){
+  <script>
+  
+  function showPopup() {
+            var popup = document.getElementById('popup');
+            popup.classList.add('active');
+            popup.style.zIndex = "9999";
+        }
+
+
+        function hidePopup() {
+            var popup = document.getElementById('popup');
+            popup.classList.remove('active');
+            popup.style.zIndex = "1";
+        }
+        
+        function showPopupFilm() {
+    var popupFilm = document.getElementById('popupfilm');
+    popupFilm.classList.add('active');
+    popupFilm.style.zIndex = "9999";
+}
+
+function hidePopupFilm() {
+    var popupFilm = document.getElementById('popupfilm');
+    popupFilm.classList.remove('active');
+    popupFilm.style.zIndex = "1";
+}
+
+        function showPopupMuzik() {
+    var popupFilm = document.getElementById('popupmuzik');
+    popupFilm.classList.add('active');
+    popupFilm.style.zIndex = "9999";
+}
+
+function hidePopupMuzik() {
+    var popupFilm = document.getElementById('popupmuzik');
+    popupFilm.classList.remove('active');
+    popupFilm.style.zIndex = "1";
+}
+
+        
+
+       
+      
+  
+  
+  
+  
+  
+  function ContactMe(){
     window.location.href ="../ContactMe/contactme.html" ;
 }
 
@@ -73,9 +141,7 @@ function Hobbies(){
     window.location.href ="../Hobbies/hobbies.html" ;
 }
 
-function GamesPage(){
-    window.location.href ="../Hobbies/Guides/GamesPage.html" ;
-}
+
 </script>  
 </body>
 </html>

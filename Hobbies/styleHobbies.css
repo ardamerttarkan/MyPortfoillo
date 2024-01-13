@@ -164,3 +164,63 @@ font-weight: 400;
     position: relative;
     margin-right: 20px;
 }
+
+#popup,
+#popupfilm,
+#popupmuzik{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background: #1f242d;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+#popup.active,
+#popupfilm.active,
+#popupmuzik.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 0.97;
+}
+#popup h2,
+#popupfilm h2,
+#popupmuzik h2{
+    color: white;
+    text-align: center;
+    margin:10px;
+}
+#popup p,
+#popupfilm p,
+#popupmuzik p{
+    color: white;
+}
+
+
+.card-btnPopup {
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-btnPopup:hover {
+    box-shadow: none;
+}
+
