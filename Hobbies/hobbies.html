@@ -6,23 +6,31 @@
     <title>Hobbies</title>
     <link rel="stylesheet" href="../Hobbies/styleHobbies.css">
     <link rel="stylesheet" href="../changepageanim.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
     <div class="navbar">
         <div class="logo">
-            <a href="#" class="logo" onclick="HomePage()">logo.</a>
+            <a href="#" class="logo" onclick="HomePage()">Ardamert.</a>
         </div>
 
+        <input type="checkbox" id="check">
+        <label for="check"  class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
         <div class="menu">
-        <a href="#" class="active" onclick="HomePage()">Ana Sayfa</a>
-        <a href="#" onclick="WhoAmI()">Ben Kimim</a>
-        <a href="#" onclick="Hobbies()">Hobiler</a>
-        <a href="#">Projeler</a>
-        <a href="#" onclick="ContactMe()">İletişim</a>
+        <a href="#" class="active" onclick="HomePage()"  style="--i:0">Ana Sayfa</a>
+        <a href="#" onclick="WhoAmI()" style="--i:1" >Ben Kimim</a>
+        <a href="#" onclick="Hobbies()"  style="--i:2">Hobiler</a>
+        <a href="#"  style="--i:3">Projeler</a>
+        <a href="#" onclick="ContactMe()" style="--i:4" >İletişim</a>
     </div>
         
     </div>
+        <div class="cards">
 
     <div class="card-cyberpunk">
         <img src="../Hobbies/Images/Cyberpunk.jpg" class="card-img">
@@ -137,7 +145,7 @@
         </div>
 
         <div id="popupmuzik">
-            <h2>Ne Tarz Müzkler Dinlerim?</h2>
+            <h2>Ne Tarz Müzi kler Dinlerim?</h2>
             <p>Elektro Dance Music(EDM) hayatımın en büyük parçalarından biri diyebilirim. Edm ile ilk 2014 yılında substep ile tanıştım. Sonra araştırmalarım sayesinde bir çok dalını ve sanatçısını keşfederek dinleme yoluna devam ettim. 2017'de İstanbul'da gittiğim Moovment Fstival Sayesinde Çok Sevdiğim İsimler Blasterjaxx, KSHMR, Timmy Trumpet Gibi İsimleri Canlı dinleme fırsatı elde ettim. Eskiden günlerim Progressive House, Bigroom, Hardstyle, Slap House, Future House gibi türler
                 dinleyerek geçerdi. Techno'dan nefret ederdim. Ta ki bu seneye kadar. Bu sene günlerimin çoğu techno dinleyerek geçiyor. Techno, Chill ve Synthwave günlük dinlediğim Türlerde başı çekiyor.
             </p>
@@ -163,6 +171,9 @@
           
           <button class="card-btnPopup" onclick="hidePopupMuzik()" >Kapat</button>
         </div>
+    
+    
+    </div>
     </div>
     
 

@@ -6,20 +6,27 @@
     <title>Ben Kimim</title>
     <link rel="stylesheet" href="../WhoAmI/whoami.css">
     <link rel="stylesheet" href="../changepageanim.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="#" class="logo" onclick="HomePage()">logo.</a>
+            <a href="#" class="logo" onclick="HomePage()">Ardamert.</a>
         </div>
 
+        <input type="checkbox" id="checkicon">
+        <label for="checkicon"  class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
         <div class="menu">
-        <a href="#" class="active" onclick="HomePage()">Ana Sayfa</a>
-        <a href="#" onclick="WhoAmI()">Ben Kimim</a>
-        <a href="#" onclick="Hobbies()">Hobiler</a>
-        <a href="#">Projeler</a>
-        <a href="#" onclick="ContactMe()">İletişim</a>
+        <a href="#" class="active" onclick="HomePage()" style="--i:0">Ana Sayfa</a>
+        <a href="#" onclick="WhoAmI()" style="--i:1">Ben Kimim</a>
+        <a href="#" onclick="Hobbies()" style="--i:2">Hobiler</a>
+        <a href="#" style="--i:3">Projeler</a>
+        <a href="#" onclick="ContactMe()" style="--i:4">İletişim</a>
     </div>
         </div>
         <div class="swiper mySwiper container">
@@ -108,7 +115,7 @@
     <div class="swiper-pagination"></div>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../WhoAmI/scriptinfo.js"></script>
 
 </body>

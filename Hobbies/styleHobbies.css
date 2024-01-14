@@ -14,6 +14,21 @@ body{
     background: #1f242d;
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards .card-cyberpunk,
+.cards .card-film,
+.cards .card-muzik {
+    margin-top: 20px;
+}
+
+
+
 .navbar{
     position: fixed;
     top: 0;
@@ -28,7 +43,18 @@ body{
 
 
 }
+.icons{
+    font-size: 2.8rem;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
 
+#check{
+    display: none;
+}
 #popupmuzik a {
     color: #ff9900; 
     text-decoration: none; 
@@ -93,6 +119,7 @@ body{
     flex-direction: column;
     justify-content: center;
     transition: 1.8s;
+    overflow-y: auto;
 }
 
 .card-cyberpunk.card-cyberpunk{
@@ -229,5 +256,71 @@ font-weight: 400;
 
 .card-btnPopup:hover {
     box-shadow: none;
+}
+
+@media(max-width: 1060px){
+    .navbar{
+        padding: 1.3rem 5%;
+    }
+}
+
+@media(max-width: 1040px ) {
+   #check:checked ~.icons #menu-icon{
+       display: none;
+   }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    .cards{
+         margin-top: 1000px; 
+        
+    }
+
+    .cards .card-cyberpunk, .cards .card-film, .cards .card-muzik{
+        margin-top: 40px;
+        
+    }
+
+    #check:checked ~.icons #close-icon{
+        display: block;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+       background: black ;
+       opacity: .9;
+       overflow: hidden;
+       transition: .3s ease;
+    }
+
+    #check:checked ~.menu {
+        height: 17.7rem;
+    }
+
+    .menu a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #check:checked ~.menu a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
 }
 
