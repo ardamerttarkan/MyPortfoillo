@@ -61,7 +61,7 @@ body{
 }
 
 .menu a:hover,
-.menu a.active{
+.menu a.activehome{
     color: #00abf0;
 }
 

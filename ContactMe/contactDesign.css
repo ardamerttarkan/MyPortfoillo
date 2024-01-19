@@ -65,7 +65,7 @@ body{
 }
 
 .menu a:hover,
-.menu a.active{
+.menu a.activecontact{
     color: #00abf0;
 }
 
@@ -168,6 +168,7 @@ form button:hover{
     box-shadow: none;
 
 }
+
 
 @media(max-width: 1050px){
     .navbar{
