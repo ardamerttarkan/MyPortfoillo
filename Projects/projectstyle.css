@@ -1,0 +1,290 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+ 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+.icons{
+    font-size: 2.8rem;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+
+#check{
+    display: none;
+}
+
+
+.logo{
+    font-size:36px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.menu a{
+    font-size: 22px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .3s;
+    
+    
+
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px 50px;
+}
+
+.container .card{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 350px;
+    background: pink;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,.15);
+    transition: .5s;
+}
+
+.container .card:hover{
+    height: 400px;
+    color: black;
+}
+
+.container .card .ImgBox{
+    position: absolute;
+    top:20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+
+    
+}
+
+.container .card:hover .ImgBox{
+    top:-100px;
+    scale:0.75;
+    box-shadow:0 15px 45px rgba(0,0,0,.2);
+}
+
+.container .card .ImgBox img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.container .card .content{
+    position: absolute;
+    top:252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s;
+}
+
+.container .card:hover .content{
+    top:130px;
+    height: 250px;
+
+}
+
+.container .card .content h2{
+    font: size 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .content p{
+    
+    color: #333;
+    
+}
+
+.container .card .content a{
+    position: relative;
+    top:15px;
+    display: inline-block; 
+    padding: 12px 25px;   
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+.menu a:hover,
+.menu a.activeproject{
+    color: #00abf0;
+}
+
+@media(max-width: 1450px){
+    .container{
+        padding: 50px 30px;
+    }
+
+}
+@media(max-width: 1330px){
+    .container{
+        flex-direction: column;
+        margin-top: 13%;
+       
+        
+    }
+
+    .container .card{
+        margin-bottom: -120px;
+    }
+     
+
+}
+
+
+
+
+@media(max-width: 1050px){
+    .navbar{
+        padding: 1.3rem 5%;
+    }
+
+    
+}
+
+@media(max-width: 944px ) {
+   #check:checked ~.icons #menu-icon{
+       display: none;
+   }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked ~.icons #close-icon{
+        display: block;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+       background: black ;
+       opacity: .9;
+       overflow: hidden;
+       transition: .3s ease;
+    }
+
+    #check:checked ~.menu {
+        height: 17.7rem;
+    }
+
+    .menu a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #check:checked ~.menu a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+  
+
+    
+   
+}
+
+@media(max-width: 700px){
+    .container{
+        margin-top: 25%;
+        padding: 10px;
+        
+    }
+
+
+}
+
+@media(max-width: 520px){
+    .container{
+        margin-top: 50%;
+        padding: 10px;
+        
+        
+    }
+
+    .container .card{
+        margin-bottom: -220px;
+    }
+
+
+}
+
+
+
+    
