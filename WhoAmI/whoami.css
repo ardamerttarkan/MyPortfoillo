@@ -6,9 +6,11 @@
 }
 
 body{
-    background-color: #1f242d;
-    
+    display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
     
    
     
@@ -20,10 +22,11 @@ body{
     display: block;
     padding-top: 100px;
     
+    
 }
 
 .navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0 ;
     width: 100%;
@@ -33,8 +36,13 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    background: #1b2028;
 
 
+}
+
+.navbar.sticky{
+    padding: 20px;
 }
 
 .icons{
@@ -126,28 +134,8 @@ body{
 
 
 
-#ch,
-#che,
-#chec,
-#checkk,
-#check1{
-    display: none;
-}
-#ch:checked ~.content,
-#che:checked ~ .content,
-#chec:checked ~ .content,
-#checkk:checked ~ .content,
-#check1:checked ~ .content{
-    display: block;
-   
-}
-#ch:checked ~ label,
-#che:checked ~ label,
-#chec:checked ~ label,
-#checkk:checked ~ label,
-#check1:checked ~ label{
-    display: none;
-}
+
+
 
 
 
@@ -155,13 +143,7 @@ body{
     display: none;
 }
 
-label{
-    display: inline-block;
-    cursor: pointer;
-    
-    color: #00abf0;
-    text-decoration: underline;
-}
+
 
 
 @media(max-width: 1050px){
@@ -196,7 +178,7 @@ label{
         left: 0;
         width: 100%;
         height: 0;
-       background: black ;
+       background: #1b2028 ;
        opacity: .9;
        overflow: hidden;
        transition: .3s ease;

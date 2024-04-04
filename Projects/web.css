@@ -26,9 +26,12 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: #1b2028;
+
 
 
 }
+
 .icons{
     font-size: 2.8rem;
     right: 5%;
@@ -64,11 +67,15 @@ body{
 
 }
 
+
+
 .container{
     position: relative;
-    width: 60%;
+    width: 80%;
     height: 50%;
     background: #1f242d;
+    padding-top: 100px;
+   
 }
 
 /*
@@ -90,6 +97,31 @@ container h1{
     padding: 10px;
     
 }
+
+.container .video-container .total-container{
+
+    height: 300px;
+    width: 380px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    background: white;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.container .video-container .total-container p{
+    
+    text-align: center;
+   
+    font-size: 20px;
+    font-weight: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+
 
 .container .video-container .video{
     height: 250px;
@@ -153,7 +185,9 @@ container h1{
 @media(max-width: 1050px){
     .navbar{
         padding: 1.3rem 5%;
+        z-index: 1000;
     }
+    
     
 
 }
@@ -205,6 +239,9 @@ container h1{
         transform: translateY(0);
         opacity: 1;
         transition-delay: calc(.15s * var(--i));
+    }
+    .container{
+        top: 0;
     }
 
     .container .popup-video video{
