@@ -227,7 +227,7 @@ font-weight: 400;
 #popup h2,
 #popupfilm h2,
 #popupmuzik h2{
-    color: white;
+    color: #00abf0;
     text-align: left;
     margin:10px;
 }
@@ -276,14 +276,11 @@ font-weight: 400;
     }
 
     .cards{
-         margin-top: 1000px; 
+         margin-top: 1px;
         
     }
 
-    .cards .card-cyberpunk, .cards .card-film, .cards .card-muzik{
-        margin-top: 40px;
-        
-    }
+   
 
     #check:checked ~.icons #close-icon{
         display: block;
@@ -318,7 +315,7 @@ font-weight: 400;
         transition: .3s ease;
         opacity: 0;
     }
-
+   
     #check:checked ~.menu a {
         transform: translateY(0);
         opacity: 1;
@@ -326,3 +323,17 @@ font-weight: 400;
     }
 }
 
+@media(max-width: 1018px ) {
+    .cards{
+        margin-top: 500px; 
+       
+   }
+
+}
+@media(max-width: 678px ) {
+    .cards{
+        margin-top: 1000px; 
+       
+   }
+
+}

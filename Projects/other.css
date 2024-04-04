@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+ 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(software.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #1b2028;
+
+
+}
+
+.navbar.sticky{
+    padding: 20px;
+}
+.icons{
+    font-size: 2.8rem;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+
+#check{
+    display: none;
+}
+
+
+.logo{
+    font-size:36px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.menu a{
+    font-size: 22px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .3s;
+    
+    
+
+
+}
+
+@keyframes typewriter {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    font-family: sans-serif;
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.text span {
+    display: inline-block;
+    opacity: 0;
+    animation: typewriter 3s steps(20) infinite;
+}
+
+.text span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.text span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.text span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.text span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.text span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.text span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.text span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.text span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+.text span:nth-child(10) {
+    animation-delay: 1s;
+}
+.text span:nth-child(11) {
+    animation-delay: 1.1s;
+}
+.text span:nth-child(12) {
+    animation-delay: 1.2s;
+}
+.text span:nth-child(13) {
+    animation-delay: 1.3s;
+}
+/* Gerekirse diğer harfler için de devam edilebilir */
+
+.turnback{
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    width: 100px;
+    height:50px ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    position: fixed;
+    margin-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.button{
+    position: absolute; 
+    margin-top:10vw;
+    
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
+.card-btnPopup:hover {
+    box-shadow: none;
+} 
+  
+
+
+
+@media(max-width: 1050px){
+    .navbar{
+        padding: 1.3rem 5%;
+    }
+
+    
+}
+
+
+
+@media(max-width: 944px ) {
+   #check:checked ~.icons #menu-icon{
+       display: none;
+   }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked ~.icons #close-icon{
+        display: block;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+       background: black ;
+       opacity: .9;
+       overflow: hidden;
+       transition: .3s ease;
+    }
+
+    #check:checked ~.menu {
+        height: 17.7rem;
+    }
+
+    .menu a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #check:checked ~.menu a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+  
+
+    
+   
+}

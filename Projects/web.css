@@ -78,16 +78,7 @@ body{
    
 }
 
-/*
-container h1{
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    font-size: 40px;
-    font-weight: normal;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-*/
+
 
 .container .video-container{
     display: flex;
@@ -102,11 +93,11 @@ container h1{
 
     height: 300px;
     width: 380px;
-    border: 5px solid #fff;
+    border: 5px solid #00abf0;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,.7);
     cursor: pointer;
-    background: white;
+    background: #3a4a69;
     overflow: hidden;
     margin: 8px;
 }
@@ -114,9 +105,11 @@ container h1{
 .container .video-container .total-container p{
     
     text-align: center;
+    color: white;
+
    
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 500;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 }
@@ -146,6 +139,10 @@ container h1{
 .container .video-container .video:hover video{
     transform: scale(1.1);
 }
+
+
+
+
 
 .container .popup-video{
     position: fixed;
@@ -186,6 +183,17 @@ container h1{
     .navbar{
         padding: 1.3rem 5%;
         z-index: 1000;
+    }
+
+    .container .popup-video span{
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        font-size: 50px;
+        color: #fff;
+        font-weight: bolder;
+        z-index:100;
+        cursor: pointer;
     }
     
     
