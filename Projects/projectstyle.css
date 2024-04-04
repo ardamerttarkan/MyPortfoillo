@@ -82,7 +82,7 @@ body{
     align-items: flex-start;
     width: 350px;
     height: 350px;
-    background: pink;
+    background: #234755;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,.15);
     transition: .5s;
@@ -146,7 +146,7 @@ object-fit: cover;
 
 .container .card .content p{
     
-    color: #333;
+    color: #fff;
     
 }
 

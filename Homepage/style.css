@@ -144,6 +144,7 @@ body{
     color:  #00abf0;
     text-decoration: none;
     z-index: 1;
+    overflow: hidden;
    
     transition: .5s;
 

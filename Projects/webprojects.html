@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Projects/web.css">
+    <link rel="stylesheet" href="../changepageanim.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#" class="logo" onclick="HomePage()">Ardamert.</a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check"  class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+      
+
+        <div class="menu">
+        <a href="#" class="activehome" onclick="HomePage()" style="--i:0">Ana Sayfa</a>
+        <a href="#" class="activebio" onclick="WhoAmI()" style="--i:1">Ben Kimim</a>
+        <a href="#" class="activehobby"onclick="Hobbies()" style="--i:2">Hobiler</a>
+        <a href="#" class="activeproject"onclick="Projects()"style="--i:3">Projeler</a>
+        <a href="#" class="activecontact"onclick="ContactMe()" style="--i:4">İletişim</a>
+    </div>
+        </div>
+
+        <div class="container">
+
+            <!--<h1>Html,Css, JavaScript ve Php Projelerim</h1> -->
+            <div class="video-container">
+                <div class="video"><video src="videos/ecommerce.webm" muted></video></div>
+                <div class="video"><video src="videos/randevu.webm" muted></video></div>
+                <div class="video"><video src="videos/bilgiyarismasi.webm" muted></video></div>
+                <div class="video"><video src="videos/calculator.webm" muted></video></div>
+                <div class="video"><video src="videos/randompass.webm" muted></video></div>
+                <div class="video"><video src="videos/todolist.webm" muted></video></div>
+        </div>
+
+        <div class="popup-video">
+            <span>&times;</span>
+            <video  src="videos/bilgiyarismasi.webm" muted autoplay controls></video>
+        </div>
+
+        </div>
+        </div>
+
+        
+
+
+
+
+        <script> function ContactMe(){
+            window.location.href ="../ContactMe/contactme.html" ;
+        }
+        
+            function HomePage(){
+            window.location.href ="../Homepage/index.html" ;
+        }
+        
+        function WhoAmI(){
+            window.location.href ="../WhoAmI/whoami.html" ;
+        }
+        function Hobbies(){
+            window.location.href ="../Hobbies/hobbies.html" ;
+        }
+        function Projects(){
+            window.location.href ="../Projects/projects.html" ;
+        }</script>
+
+        <script>
+            document.querySelectorAll('.video-container video').forEach(vid=>{
+
+               vid.onclick=()=>{
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src =vid.getAttribute('src');
+               }
+            });
+
+            document.querySelector('.popup-video span').onclick =() =>{
+                document.querySelector('.popup-video').style.display = 'none';
+
+            }
+        </script>
+    </body>
