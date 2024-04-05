@@ -105,10 +105,7 @@ body{
    justify-content: center;
    align-content: center;
    display: none;
-   
   
-   
-   
 }
 .image{
     
@@ -252,11 +249,9 @@ body{
         width: 100%;
         border: 4px solid #00abf0;
         border-radius: 25px;
-       
-
-        
-      
     }
+
+    
     .home-contect{
         order: 2;
     }

@@ -43,6 +43,7 @@
                    
 
                 <div class="video"><video src="videos/ecommerce.webm" muted></video>
+                    <button class="play-button">Oynat</button>
                     </div>
 
                 <div class="desc-container">
@@ -91,11 +92,26 @@
                                         <p>To-Do List </p>
                                     </div>
                                     </div>
+                                    <div class="total-container">
+
+                                        <div class="img"><img src="odin.png" ></img></div>
+                        
+                                        <div class="desc-container">
+                                            <p>Odin </p>
+                                        </div>
+                                        </div>
+            </div>
+
        
 
         <div class="popup-video">
             <span>&times;</span>
             <video  src="videos/bilgiyarismasi.webm" muted autoplay controls></video>
+        </div>
+        <div class="popup-img">
+            <span>&times;</span>
+            
+            <img  src="odin.png"></img>
         </div>
 
         </div>
@@ -115,7 +131,7 @@
         }
         
             function HomePage(){
-            window.location.href ="../Homepage/index.html" ;
+            window.location.href ="../index.html" ;
         }
         
         function WhoAmI(){
@@ -142,6 +158,23 @@
 
             }
         </script>
+
+<script>
+    document.querySelectorAll('.video-container img').forEach(vid=>{
+
+       vid.onclick=()=>{
+        document.querySelector('.popup-img').style.display = 'block';
+        document.querySelector('.popup-video img').src =vid.getAttribute('src');
+       }
+    });
+
+    document.querySelector('.popup-img span').onclick =() =>{
+        document.querySelector('.popup-img').style.display = 'none';
+
+    }
+</script>
+
+
         <script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var navbar = document.querySelector(".navbar");
