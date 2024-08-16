@@ -98,6 +98,35 @@ body{
     line-height: 30px;
 }
 
+.home-contect .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 50px;
+    
+}
+
+.btn-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.btn-box a:hover{
+    background: transparent;
+    color: #00abf0;
+}
+
 .responsive-img{
     
     margin-left: 1%;
