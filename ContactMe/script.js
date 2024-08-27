@@ -1,8 +1,9 @@
-const form = document.querySelector('form');
-const name = document.querySelector('#name');
-const email = document.querySelector('#Email');
-const message = document.querySelector('#message');
-const subject = document.querySelector('#subject');
+const form = document.querySelector("form");
+const username = document.querySelector("#name"); 
+const email = document.querySelector("#email"); 
+const subject = document.querySelector("#subject"); 
+const message = document.querySelector("#message"); 
+
 
 
 function ContactMe(){
@@ -23,28 +24,56 @@ function Hobbies(){
 
 function sendEmail(){
 
-    const bodyMessage = `İsim: ${name.value} <br> Email: ${email.value} <br> Konu: ${subject.value} <br>   Mesaj: ${message.value}`;
+    const bodyMessage = `İsim: ${username.value} <br> Email: ${email.value} <br> Konu: ${subject.value} <br>   Mesaj: ${message.value}`;
 
 
 
     Email.send({
-        //https://smtpjs.com/
-        SecureToken: "42efbe46-83f4-45c5-a93d-5a423015def6",
-        To : 'ardamert607734@gmail.com',
-        From : "ardamert607734@gmail.com",
+        SecureToken: "f9f25e07-1fa2-461a-a9f0-ba923130b394",
+        To : 'iletisimardamert@gmail.com',
+        From : "iletisimardamert@gmail.com",
         Subject : subject.value,
         Body : bodyMessage
     }).then(
-      message => {
-        if(message == 'OK'){
-            Swal.fire({
-                title: "Teşekkürler",
-                text: "Mesajınız İletildi!",
-                icon: "success"
-              });
+      message => { if(message == "OK"){
+        Swal.fire({
+            title: "Teşekkürler!",
+            text: "En Kısa Sürede dönüş Yapacağım!",
+            icon: "success"
+          });
         }
-      }
+    }
+    
     );
+}
+
+function checkEmail(){
+    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    const errorTxtEmail = document.querySelector(".error-txt.email");
+
+
+
+
+    if(!email.value.match(emailRegex)){
+        email.classList.add("error");
+        email.parentElement.classList.add("error");
+
+        if(email.value != ""){
+            errorTxtEmail.innerText = "Lütfen geçerli bir email adresi giriniz.";
+        }
+        else{
+            errorTxtEmail.innerText = "Email Boş Olamaz";
+        }
+
+
+
+    }
+    else{
+        email.classList.remove("error");
+        email.parentElement.classList.remove("error");
+    }
+
+
 }
 
 function checkInputs() {
@@ -83,51 +112,32 @@ for(const item of items ){
 }
 
 
-function checkEmail(){
-    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
-    const errorTxtEmail = document.querySelector(".error-txt.email");
 
 
-
-
-    if(!email.value.match(emailRegex)){
-        email.classList.add("error");
-        email.parentElement.classList.add("error");
-
-        if(email.value != ""){
-            errorTxtEmail.innerText = "Lütfen geçerli bir email adresi giriniz.";
-        }
-        else{
-            errorTxtEmail.innerText = "Email Boş Olamaz";
-        }
-
-
-
-    }
-    else{
-        email.classList.remove("error");
-        email.parentElement.classList.remove("error");
-    }
-
-
-}
-
-
-
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkInputs();
 
+    if(!username.classList.contains("error") && !email.classList.contains("error") && !subject.classList.contains("error")  &&!message.classList.contains("error")){
 
-if(!name.classList.contains("error") && !email.classList.contains("error") && !message.classList.contains("error") && !subject.classList.contains("error")){
-
-    sendEmail();
+        sendEmail();
+       
+        form.reset();
+        return false;
+    }
    
-    form.reset();
-    return false;
-}
-
-
-
-
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
