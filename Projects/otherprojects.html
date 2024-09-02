@@ -11,6 +11,8 @@
    
 </head>
 <body>
+
+    <!--Navbar-->
     <div class="navbar">
         <div class="logo">
             <a href="#" class="logo" onclick="HomePage()">Ardamert.</a>
@@ -25,43 +27,45 @@
       
 
         <div class="menu">
-        <a href="#" class="activehome" onclick="HomePage()" style="--i:0">Ana Sayfa</a>
-        <a href="#" class="activebio" onclick="WhoAmI()" style="--i:1">Ben Kimim</a>
-        <a href="#" class="activehobby"onclick="Hobbies()" style="--i:2">Hobiler</a>
-        <a href="#" class="activeproject"onclick="Projects()"style="--i:3">Projeler</a>
-        <a href="#" class="activecontact"onclick="ContactMe()" style="--i:4">İletişim</a>
-    </div>
+            <a href="#" class="activehome" onclick="HomePage()" style="--i:0">Ana Sayfa</a>
+            <a href="#" class="activeblog" onclick="Blog()" style="--i:1">Blog</a>
+            <a href="#" class="activebio" onclick="WhoAmI()" style="--i:2">Ben Kimim</a>
+            <a href="#" class="activehobby"onclick="Hobbies()" style="--i:3">Hobiler</a>
+            <a href="#" class="activeproject"onclick="Projects()"style="--i:4">Projeler</a>
+            <a href="#" class="activecontact"onclick="ContactMe()" style="--i:5">İletişim</a>
+        </div>
         </div>
 
+        <div class="container">
 
-        <div class="coming-soon">
-            <span class="text">
-                
-                <span>Ç</span>
-                <span>O</span>
-                <span>K</span>
-                <span> </span>
-                <span>Y</span>
-                <span>A</span>
-                <span>K</span>
-                <span>I</span>
-                <span>N</span>
-                <span>D</span>
-                <span>A</span>
-            </span>
+            <h1 class="heading">Diğer Projeler</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>Flutter</h3>
+                    <p>Flutter ToDo App</p>
+                    <a href="https://github.com/ardamerttarkan/ToDoAppFlutter" target="_blank" class="btn-box">Görüntüle</a>
+                    
+                </div>
+
+                <div class="box">
+                    <h3>Java </h3>
+                    <p>Çeşitli Java Projeleri</p>
+                    <a href="https://github.com/ardamerttarkan/javaproject" target="_blank" class="btn-box">Görüntüle</a>
+                    
+                </div>
+
+              
+             </div>
+
             
         </div>
-        <div class="button">
-            <button class="turnback" onclick=Projects() >Geri Dön</button>
-        </div>
         
+       
+        
+    
 
-
-
-
-
-
-
+        
 
 
 
@@ -82,30 +86,10 @@
         }
         function Projects(){
             window.location.href ="../Projects/projects.html" ;
+        }
+        function Blog(){
+            window.location.href ="../Blog/BlogSoon.html" ;
         }</script>
 
-        <script>
-            document.querySelectorAll('.video-container video').forEach(vid=>{
-
-               vid.onclick=()=>{
-                document.querySelector('.popup-video').style.display = 'block';
-                document.querySelector('.popup-video video').src =vid.getAttribute('src');
-               }
-            });
-
-            document.querySelector('.popup-video span').onclick =() =>{
-                document.querySelector('.popup-video').style.display = 'none';
-
-            }
-        </script>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var navbar = document.querySelector(".navbar");
-                navbar.classList.toggle("sticky", window.scrollY>0);
-            });
-        </script>
-        
-        
-        
-        
+       
     </body>

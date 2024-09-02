@@ -11,6 +11,8 @@
    
 </head>
 <body>
+
+    <!--Navbar-->
     <div class="navbar">
         <div class="logo">
             <a href="#" class="logo" onclick="HomePage()">Ardamert.</a>
@@ -25,52 +27,62 @@
       
 
         <div class="menu">
-        <a href="#" class="activehome" onclick="HomePage()" style="--i:0">Ana Sayfa</a>
-        <a href="#" class="activebio" onclick="WhoAmI()" style="--i:1">Ben Kimim</a>
-        <a href="#" class="activehobby"onclick="Hobbies()" style="--i:2">Hobiler</a>
-        <a href="#" class="activeproject"onclick="Projects()"style="--i:3">Projeler</a>
-        <a href="#" class="activecontact"onclick="ContactMe()" style="--i:4">İletişim</a>
-    </div>
+            <a href="#" class="activehome" onclick="HomePage()" style="--i:0">Ana Sayfa</a>
+            <a href="#" class="activeblog" onclick="Blog()" style="--i:1">Blog</a>
+            <a href="#" class="activebio" onclick="WhoAmI()" style="--i:2">Ben Kimim</a>
+            <a href="#" class="activehobby"onclick="Hobbies()" style="--i:3">Hobiler</a>
+            <a href="#" class="activeproject"onclick="Projects()"style="--i:4">Projeler</a>
+            <a href="#" class="activecontact"onclick="ContactMe()" style="--i:5">İletişim</a>
+        </div>
         </div>
 
+        <div class="container">
 
-        <div class="container"> 
-            <div class="card">
-                <h2>Yaptığım Oyunlar</h2>
-                <p>Üzülerek söylemek istiyorum ki Windows'tan Debian'a geçiş sırasında windows'un silinmesi üzerine unreal engine başta olmak üzere tüm oyun projelerimi kaybettim.
-                    Bu yüzden oyunlarımı sunamayacak olsam da üzerinde çalıştığım kenaiklerden ve  yaptığım oyunlardan bahsetmek istiyorum. Hayat kurtaran bir tavsiye: Debian, Windows'un üzerine kurulmalı. Windows, debian'ın üzerine kurulamıyor.
-            </div>
-            <div class="card2">
+            <h1 class="heading">Oyun Projeleri</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>Unity</h3>
+                    <p>Unity İle Multiplayer 2d çizgi çizmeli ve çizilen çizgi doğrultusunda karakterin hareketini sağlayan oyun projesi</p>
+                    <a href="https://github.com/ardamerttarkan/2dGame" target="_blank" class="btn-box">Görüntüle</a>
+                    
+                </div>
+
+                <div class="box">
+                    <h3>Diğer Unity Projeleri</h3>
+                    <p>
+                        -Fps Oyun Projesi <br>
+                        -Endless Runner Oyun Projesi <br>
+                        -Çeşitli Fps Multiplayer Level Tasarımları <br>
+
+                    </p>
+                   
+                </div>
+                <div class="box">
+                    <h3>Unreal Engine</h3>
+                    <p>
+                        -Tps Shooter Oyun Projesi <br>
+                        -Fps Shhoter Oyun Projesi <br>
+                        -Araba Yarışı Oyun Projesi <br>
+                        -Gelişmiş Zombi Oyunu Projesi <br>
+                        -Endless Runner Oyun Projesi <br>
+                        -Savaş Uçağı Simülasyon Oyun Projesi <br>
+                        
+                    </p>
+                    
+                </div>
+             </div>
+
+            
+        </div>
         
-                <h2>UNREAL ENGINE</h2>
-                <h3>Third Person Shooter</h3>
-               <p>Tps Character Movement, Tps Yerden Sİlah Alma ve Vücutta Konumlandırma, Tps Shooter Ateş Etme, Tps Crouching, Tps Sprinting</p>
-               <h3>First Person Shooter</h3>
-               <p>First Person all Movement Mechanics(Yürüme,Koşma,Eğilme,Sprint Atma vb.),First Person Zombi Oyunu, Zombi AI(Zombiler alanda yürürler. Ateş sesi duyarlarsa veya bizi görürlerse bize saldırırlar.
-                Onun haricinde bir tehlike yok.) Zombinin Hasar Vermesi, Kapkaranlık bir haritada Sarjlı bir el fenerimizin olup sarjı bitince batarya bulana kadar o karanlıkta zombilerle mücadele etmek. Son yaptığım oyun bu konsept üzerineydi.(Bitirilmişti)</p>
-                <h3>Bilişim Vadisi Oyun Geliştirme Kampı İçin Geliştirdiğim Oyun(Depremden dolayı iptal edildi)</h3>
-                <p> Bir savaş jeti oyunu. Karadan hızlanarak uçağımız kalkar ve hedefleri yok etmeye çalışırız. 3 Hedef vurunca görev tamamlanır ve belirlenen alana düşük bir hızla iniş yapmamız gerekmektedir. Başarılı şekilde iniş yapılırsa  bir sonraki bölüme geçeriz.(Bitirilmişti)</p>
-                <h3>Bilişim Vadisi Oyun Geliştirme Kampı İçin Geliştirdiğim Bir Diğer Oyun</h3>
-                <p>Bir aköyümüz var. Köyümüzün elektrik sistemleri çöktü. Tek araba bizde ve gidip tamir eşyaları almamız gerekiyor. Gideceğimiz yer uzak ve eşyaları hiçbir yere 
-                çarpmamamız gerekiyor. Aksi halde bölüm yeniden başlar.(Bitirilmişti)</p>
+       
+        
+    
 
-               </p>
-            </div>
-            <div class="card3">
-
-                <h2>UNITY</h2>
-                <p>
-                    Hyper Casual Sonsuz Koşu Oyunu, Bir Fps Oyunu için Level Design, Third Person Host Oyunu. Aynı ağa bağlı 2 karakterin aynı serverda dolaşması ve her karakterin kendine has kamerası olması</p>
-               
-            </div>
+        
 
 
-
-
-
-
-
-        </div>
 
 
         <script> function ContactMe(){
@@ -89,30 +101,10 @@
         }
         function Projects(){
             window.location.href ="../Projects/projects.html" ;
+        }
+        function Blog(){
+            window.location.href ="../Blog/BlogSoon.html" ;
         }</script>
 
-        <script>
-            document.querySelectorAll('.video-container video').forEach(vid=>{
-
-               vid.onclick=()=>{
-                document.querySelector('.popup-video').style.display = 'block';
-                document.querySelector('.popup-video video').src =vid.getAttribute('src');
-               }
-            });
-
-            document.querySelector('.popup-video span').onclick =() =>{
-                document.querySelector('.popup-video').style.display = 'none';
-
-            }
-        </script>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var navbar = document.querySelector(".navbar");
-                navbar.classList.toggle("sticky", window.scrollY>0);
-            });
-        </script>
-        
-        
-        
-        
+       
     </body>

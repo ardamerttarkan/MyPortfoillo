@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    text-decoration: none;
+    border: none;
 }
 
 
@@ -67,121 +70,86 @@ body{
 
 }
 
-
-
 .container{
-    position: relative;
-    width: 80%;
-    height: 50%;
     background: #1f242d;
-    padding-top: 100px;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+   
+}
+.container .heading{
+    text-align: center;
+    padding-bottom: 150px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 42px;
+}
+
+.container .box-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container .box-container .box{
+    
+    border: 4px solid #0ef;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #1f3d4738;
+    text-align: center;
+    padding: 50px 50px;
+    flex: 1 1 15rem;
+   
+    align-self: normal;
+    
+    
+}
+
+.container .box-container .box h3{
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container .box-container .box p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
    
 }
 
-
-
-.container .video-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:15px;
-    justify-content: center;
-    padding: 10px;
-    
-}
-
-.container .video-container .total-container{
-
-    height: 310px;
-    width: 380px;
-    border: 2px solid #044d6a;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.7);
-    cursor: pointer;
-    background: #222a3a;
-    overflow: hidden;
-    margin: 8px;
-}
-
-.container .video-container .total-container p{
-    
+.container .box-container .box .btn-box{
+   
+    display: inline-block;
+    margin-top: auto;
+    background: #0ef;
+    color: #1b2028;
     text-align: center;
-    
-    color: white;
-font-size: 20px;
-    font-weight: 500;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    border-radius: 15px;
 
-}
-
-
-
-.container .video-container .video,
-.container .video-container .img{
-    height: 250px;
-    width: 350px;
-    border: 5px solid #fff;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.7);
-    cursor: pointer;
-    overflow: hidden;
-    margin: 15px;
-    position: relative;
+   
     
 }
 
-
-.container .video-container .video video,
-.container .video-container .img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: .2s linear;
-}
-.container .video-container .video:hover video,
-.container .video-container .img:hover img{
-    transform: scale(1.1);
+.container .box-container .box .btn-box:hover{
+    background: transparent;
+    border: 2px solid #0ef;
+    color: #00abf0;
 }
 
 
 
 
-
-.container .popup-video,
-.container .popup-img{
-    position: fixed;
-    top: 0; left:0;
-    z-index: 100;
-    background: #1f242d;
-    height: 100%;
-    width: 100%;
-    display: none;
-}
-
-.container .popup-video video,
-.container .popup-img img{
-    position: absolute;
-    top: 50%;;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 750px;
-    border-radius: 5px;
-    border: 3px solid #fff;
-    object-fit: cover;
-    
-}
-
-.container .popup-video span,
-.container .popup-img span
-{
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    font-size: 50px;
-    color: #fff;
-    font-weight: bolder;
-    z-index:100;
-    cursor: pointer;
-}
 
 
 
@@ -191,18 +159,7 @@ font-size: 20px;
         z-index: 1000;
     }
 
-    .container .popup-video span,
-    .container .popup-img span
-    {
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        font-size: 50px;
-        color: #fff;
-        font-weight: bolder;
-        z-index:100;
-        cursor: pointer;
-    }
+
     
     
 
@@ -260,10 +217,7 @@ font-size: 20px;
         top: 0;
     }
 
-    .container .popup-video video,
-    .container .popup-img img{
-        width: 95%;
-    }
+   
     
     }
 
@@ -285,10 +239,5 @@ font-size: 20px;
          
         }
 
-        .container .video-container .video,
-        .container .video-container .img{
-            width: auto;
-
-        }
- 
+        
      }
